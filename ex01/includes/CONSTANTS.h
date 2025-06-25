@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   CONSTANTS.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 16:28:11 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/25 15:22:41 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/12 14:21:04 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/16 15:33:22 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/main.hpp"
+#ifndef CONSTANTS_HPP
+#define CONSTANTS_HPP
 
-int main()
-{
-	string heep_horde[5]  = {"Peggy", "Hetty", "Pete", "Grunter", "Wilma"};
-	string stack_horde[5] = {"Silly", "Snarl", "Kathrine the greedy", "Gnorl", "Willy"};
+#include <iostream>
 
-	for (size_t i = 0; i < 5; i++)
-	{
-		Zombie *Z = newZombie(heep_horde[i]);
-		Z->announce();
-		delete Z;
-	}
+using std::cin;
+using std::cout;
+using std::endl;
+using std::string;
 
-	for (size_t i = 0; i < 5; i++)
-	{
-		randomChump(stack_horde[i]);
-	}
-}
+#endif

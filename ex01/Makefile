@@ -6,11 +6,11 @@
 #    By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/04 15:45:04 by uschmidt          #+#    #+#              #
-#    Updated: 2025/06/25 15:23:12 by uschmidt         ###   ########.fr        #
+#    Updated: 2025/06/25 15:47:02 by uschmidt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= brainz
+NAME		= moarbrainz
 
 SRC_FOLDER	= ./
 OBJ_FOLDER	= build/
@@ -23,8 +23,7 @@ vpath %.cpp $(SRC_FOLDER)Zombie
 CFILES += Zombie.cpp
 
 vpath %.cpp $(SRC_FOLDER)utils
-CFILES += newZombie.cpp
-CFILES += randomChump.cpp
+CFILES += zombieHorde.cpp
 
 OFILES      = $(addprefix $(OBJ_FOLDER), $(notdir $(CFILES:.cpp=.o)))
 

@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 16:28:11 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/25 15:22:41 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/05 14:21:32 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/16 15:00:52 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
-#include "includes/main.hpp"
+#include "../includes/CONSTANTS.h"
 
-int main()
+class Zombie
 {
-	string heep_horde[5]  = {"Peggy", "Hetty", "Pete", "Grunter", "Wilma"};
-	string stack_horde[5] = {"Silly", "Snarl", "Kathrine the greedy", "Gnorl", "Willy"};
+private:
+	string _name;
 
-	for (size_t i = 0; i < 5; i++)
-	{
-		Zombie *Z = newZombie(heep_horde[i]);
-		Z->announce();
-		delete Z;
-	}
+public:
+	Zombie();
+	Zombie(string name);
+	~Zombie();
+	void announce(void);
+};
 
-	for (size_t i = 0; i < 5; i++)
-	{
-		randomChump(stack_horde[i]);
-	}
-}
+#endif
