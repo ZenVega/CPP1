@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   CONSTANTS.h                                        :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/12 14:21:04 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/16 15:33:22 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/26 14:05:46 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/26 15:39:40 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONSTANTS_HPP
-#define CONSTANTS_HPP
+#include "../Weapon/Weapon.hpp"
+#include "../includes/CONSTANTS.hpp"
 
-#include <iostream>
+class HumanB
+{
+private:
+	string	_name;
+	Weapon *_weapon;
 
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
-using std::stringstream;
+public:
+	HumanB(string name);
+	~HumanB();
 
-#endif
+	void setWeapon(Weapon &weapon);
+	void attack(void);
+};

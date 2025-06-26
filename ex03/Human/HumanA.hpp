@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 16:28:22 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/26 15:04:43 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/26 14:05:46 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/26 15:30:30 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-#define MAIN_HPP
-
-#include "../Human/HumanA.hpp"
-#include "../Human/HumanB.hpp"
 #include "../Weapon/Weapon.hpp"
-#include "CONSTANTS.hpp"
+#include "../includes/CONSTANTS.hpp"
 
-#endif
+class HumanA
+{
+private:
+	string	_name;
+	Weapon &_weapon;
+
+public:
+	HumanA(string name, Weapon &weapon);
+	~HumanA();
+
+	void attack(void);
+};

@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 16:28:22 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/26 15:04:43 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/26 15:06:03 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/26 15:33:36 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-#define MAIN_HPP
+#include "HumanA.hpp"
 
-#include "../Human/HumanA.hpp"
-#include "../Human/HumanB.hpp"
-#include "../Weapon/Weapon.hpp"
-#include "CONSTANTS.hpp"
+HumanA::HumanA(string name, Weapon &weapon) :
+	_name(name), _weapon(weapon)
+{
+}
 
-#endif
+HumanA::~HumanA()
+{
+}
+
+void HumanA::attack(void)
+{
+	cout << "Human " << _name << " pops some heads with " << _weapon.getType() << endl;
+}

@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 16:28:22 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/26 15:04:43 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/26 13:58:40 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/26 15:22:30 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-#define MAIN_HPP
+#include "../includes/CONSTANTS.hpp"
 
-#include "../Human/HumanA.hpp"
-#include "../Human/HumanB.hpp"
-#include "../Weapon/Weapon.hpp"
-#include "CONSTANTS.hpp"
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
+
+class Weapon
+{
+private:
+	string _type;
+
+public:
+	Weapon(void);
+	Weapon(string type);
+	~Weapon();
+	void   setType(string type);
+	string getType(void);
+};
 
 #endif

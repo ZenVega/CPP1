@@ -6,11 +6,11 @@
 #    By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/04 15:45:04 by uschmidt          #+#    #+#              #
-#    Updated: 2025/06/25 15:47:02 by uschmidt         ###   ########.fr        #
+#    Updated: 2025/06/26 15:20:34 by uschmidt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= brain
+NAME		= violence
 
 SRC_FOLDER	= ./
 OBJ_FOLDER	= build/
@@ -18,6 +18,13 @@ OBJ_FOLDER	= build/
 CFILES		:=
 vpath %.cpp $(SRC_FOLDER)
 CFILES += main.cpp
+
+vpath %.cpp $(SRC_FOLDER)Weapon
+CFILES += Weapon.cpp
+
+vpath %.cpp $(SRC_FOLDER)Human
+CFILES += HumanA.cpp
+CFILES += HumanB.cpp
 
 OFILES      = $(addprefix $(OBJ_FOLDER), $(notdir $(CFILES:.cpp=.o)))
 

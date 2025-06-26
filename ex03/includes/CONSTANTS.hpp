@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   CONSTANTS.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 16:28:22 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/26 15:04:43 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/12 14:21:04 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/26 15:00:04 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-#define MAIN_HPP
+#ifndef CONSTANTS_HPP
+#define CONSTANTS_HPP
 
-#include "../Human/HumanA.hpp"
-#include "../Human/HumanB.hpp"
-#include "../Weapon/Weapon.hpp"
-#include "CONSTANTS.hpp"
+#include <iostream>
+
+using std::cin;
+using std::cout;
+using std::endl;
+using std::string;
+using std::stringstream;
 
 #endif

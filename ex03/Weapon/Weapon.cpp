@@ -1,21 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/06 16:28:22 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/26 15:04:43 by uschmidt         ###   ########.fr       */
+/*   Created: 2025/06/26 14:02:08 by uschmidt          #+#    #+#             */
+/*   Updated: 2025/06/26 15:21:37 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-#define MAIN_HPP
+#include "Weapon.hpp"
 
-#include "../Human/HumanA.hpp"
-#include "../Human/HumanB.hpp"
-#include "../Weapon/Weapon.hpp"
-#include "CONSTANTS.hpp"
+Weapon::Weapon()
+{
+	_type = "unknown";
+}
 
-#endif
+Weapon::Weapon(string type)
+{
+	_type = type;
+}
+
+Weapon::~Weapon()
+{
+}
+
+void Weapon::setType(string type)
+{
+	_type = type;
+}
+
+string Weapon::getType(void)
+{
+	return _type;
+}
