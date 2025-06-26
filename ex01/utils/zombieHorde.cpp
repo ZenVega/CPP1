@@ -16,7 +16,13 @@ Zombie *zombieHorde(int N, std::string name)
 {
 	Zombie *Zs = new Zombie[N];
 	for (int i = 0; i < N; i++)
-		Zs[i] = Zombie(name + "#" + std::to_string(i));
+	{
+		stringstream itoa;
+		itoa << i;
+		string index_str;
+		itoa >> index_str;
+		Zs[i].setName(name + "#" + (index_str));
+	}
 
 	return Zs;
 }

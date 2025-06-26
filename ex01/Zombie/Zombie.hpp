@@ -9,6 +9,7 @@
 /*   Updated: 2025/06/16 15:00:52 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
 
@@ -21,8 +22,8 @@ private:
 
 public:
 	Zombie();
-	Zombie(string name);
 	~Zombie();
+	void setName(string name);
 	void announce(void);
 };
 

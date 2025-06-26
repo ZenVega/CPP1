@@ -14,9 +14,11 @@
 
 int main()
 {
-
-	size_t	hordeCount = 37;
+	size_t	hordeCount = 17;
 	Zombie *horde	   = zombieHorde(hordeCount, "gnarg");
+	for (size_t i = 0; i < hordeCount; i++)
+		horde[i].announce();
 
-	delete horde;
+	delete[] horde;
+	return 0;
 }

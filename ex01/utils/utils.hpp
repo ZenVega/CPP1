@@ -15,6 +15,7 @@
 
 #include "../Zombie/Zombie.hpp"
 #include "../includes/CONSTANTS.h"
+#include <iostream>
 #include <sstream>
 
 Zombie *zombieHorde(int N, std::string name);
