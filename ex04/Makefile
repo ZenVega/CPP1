@@ -6,11 +6,11 @@
 #    By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/04 15:45:04 by uschmidt          #+#    #+#              #
-#    Updated: 2025/06/26 15:20:34 by uschmidt         ###   ########.fr        #
+#    Updated: 2025/06/26 16:31:17 by uschmidt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= violence
+NAME		= sed
 
 SRC_FOLDER	= ./
 OBJ_FOLDER	= build/
