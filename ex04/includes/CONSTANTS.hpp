@@ -6,7 +6,7 @@
 /*   By: uschmidt <uschmidt@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:21:04 by uschmidt          #+#    #+#             */
-/*   Updated: 2025/06/26 15:50:56 by uschmidt         ###   ########.fr       */
+/*   Updated: 2025/06/26 16:23:48 by uschmidt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 
 using std::cout;
 using std::endl;
+using std::ifstream;
 using std::string;
+using std::stringstream;
 
 #endif
