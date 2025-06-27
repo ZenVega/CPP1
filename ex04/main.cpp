@@ -108,6 +108,5 @@ int main(int argc, char **argv)
 	{
 		return return_with_err(err);
 	}
-	cout << copy;
 	return 0;
 }
