@@ -53,15 +53,33 @@ int extract_content(char *fileName, string &copy)
 	ifstream	 file;
 	stringstream cp_stream;
 	string		 buffer;
+	bool		 nl = false;
 
 	file.open(fileName);
 	if (file.is_open())
 		while (getline(file, buffer))
+		{
+			if (nl)
+				cp_stream << endl;
 			cp_stream << buffer;
+			nl = true;
+		}
 	else
 		return 1;
 	copy = cp_stream.str();
 	file.close();
+	return 0;
+}
+
+int write_to_file(char *fileName, string copy)
+{
+	ofstream file;
+	string	 newFilename = (string)fileName + ".replace";
+	file.open(newFilename.c_str());
+	if (file.is_open())
+		file << copy;
+	else
+		return 1;
 	return 0;
 }
 
@@ -80,6 +98,8 @@ int main(int argc, char **argv)
 			throw ERR_FILE;
 		if (replace_target(copy, target, sub))
 			throw ERR_INPUT;
+		if (write_to_file(argv[1], copy))
+			throw ERR_OUTPUT;
 	}
 	catch (int err)
 	{
