@@ -14,7 +14,15 @@
 int main(int argc, char **argv)
 {
 	Harl harl;
-	harl.complain((string)argv[1]);
+	if (argc < 2)
+	{
+		harl.default_complain();
+		return (0);
+	}
+	for (int i = 1; i < argc; i++)
+	{
+		harl.complain((string)argv[i]);
+	}
 
 	return 0;
 }

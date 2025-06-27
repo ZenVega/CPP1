@@ -24,4 +24,5 @@ public:
 	Harl();
 	~Harl();
 	void complain(string level);
+	void default_complain(void);
 };
