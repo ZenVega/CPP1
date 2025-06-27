@@ -24,6 +24,9 @@ int return_with_err(int err)
 	case ERR_INPUT:
 		cout << "Invalid input string" << endl;
 		break;
+	case ERR_OUTPUT:
+		cout << "Could not write to file" << endl;
+		break;
 	default:
 		cout << "Unknown Error" << endl;
 	}
