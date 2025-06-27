@@ -13,6 +13,10 @@
 #ifndef CONSTANTS_HPP
 #define CONSTANTS_HPP
 
+#define ERR_ARGS 5
+#define ERR_FILE 6
+#define ERR_INPUT 7
+
 #include <iostream>
 
 using std::cout;
